@@ -12,9 +12,10 @@
                 <thead class="bg-dark text-light">
                     <tr>
                         <th>EmployeeId</th>
-                        <th>First Name</th>
+                        <th>Name</th>
+                        @*<th>First Name</th>
                         <th>Middle Name</th>
-                        <th>Last Name</th>
+                        <th>Last Name</th>*@
                         <th>Gender</th>
                         <th>Department Name</th>
                         <th>Department Code</th>
@@ -26,9 +27,10 @@
                     {
                         <tr>
                             <td>@d.EmployeeId</td>
-                            <td>@d.FirstName</td>
+                            <td>@d.FullName</td>
+                            @*<td>@d.FirstName</td>
                             <td>@d.MiddleName</td>
-                            <td>@d.LastName</td>
+                            <td>@d.LastName</td>*@
                             <td>@d.Gender</td>
                             <td>@d.DepartmentName</td>
                             <td>@d.DepartmentCode</td>

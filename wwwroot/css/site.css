@@ -16,3 +16,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.cst_icon{
+    margin-top:20px;
+    font-size:50px;
+    color:#0026ff;
+}
+
+.cst_icon a:hover{
+    color:red;
+    font-size:60px;
+    transition:.1s ease-in-out;
+}
+

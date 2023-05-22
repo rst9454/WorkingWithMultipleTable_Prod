@@ -1,0 +1,35 @@
+﻿@model WorkingWithMultipleTable_Prod.Models.Department
+@{
+    ViewData["Title"] = "AddDepartment";
+    Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+           <div class="card">
+                <div class="card-header">
+                    <h2 class="text-info text-center">Add Department</h2>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="AddDepartment">
+                        <div class="form-group">
+                            <label asp-for="DepartmentName"></label>
+                            <input type="text" class="form-control" placeholder="Enter department name" autocomplete="off" asp-for="DepartmentName" />
+                            <span class="text-danger" asp-validation-for="DepartmentName"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="DepartmentCode"></label>
+                            <input type="text" class="form-control" placeholder="Enter department name" autocomplete="off" asp-for="DepartmentCode" />
+                            <span class="text-danger" asp-validation-for="DepartmentCode"></span>
+                        </div>
+                        <div class="">
+                            <input type="submit" class="btn btn-sm btn-primary m-2 p-2" style="float:right" value="SUBMIT" />
+                        </div>
+                    </form>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+

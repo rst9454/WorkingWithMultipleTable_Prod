@@ -21,7 +21,7 @@ $(function () {
     if ($('div.alert.msg').length) {debugger
         setTimeout(() => {
             $('div.alert.msg').fadeOut();
-        }, 2000);
+        }, 4000);
     }
 })
 

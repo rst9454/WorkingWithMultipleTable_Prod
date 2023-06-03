@@ -84,5 +84,16 @@ namespace WorkingWithMultipleTable_Prod.Controllers
 
             return View(data);
         }
+
+        public async Task<IActionResult> AddEmployee()
+        {
+            ViewBag.department = context.Departments.ToList();
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddEmployee(EmployeeDepartmentSummaryViewModel employeeDepartment)
+        {
+            return View();
+        }
     }
 }
